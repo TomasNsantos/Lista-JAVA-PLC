@@ -1,0 +1,26 @@
+O que seria mais apropriado é uma questão de qual seria a prioridade da locadora
+ao armazenar as características dos veículos.O uso somente de uma classe concreta provavelmente
+não seria indicado para nenhum tipo de veículo,pois normalmente todos tem alguma
+característica em comum que poderia ser implementada com reutilização
+de código via classe abstrata ou interface,com uma possível exceção sendo algo como um 
+cenário improvável onde uma locadora alugasse ao mesmo tempo carros,motos e uniciclos,
+com o terceiro veículo não sendo motorizado,não tendo o mesmo número de rodas que nenhum outro
+,não podendo levar carga e não tendo estabilidade,sendo é ímpar o suficiente em relação aos outros para
+ter apenas um classe concreta para o definir,pois usar uma classe abstrata ou interface 
+faria com que em todos os outros veículos fosse necessário um metódo para dizer que
+o veículo é motorizado,ou que possui mais de um ponto de apoio(ou seja,o motorista não
+não vai cair se ficar parado),e num cenário assim uma interface seria menos indicada ainda,
+pois afetaria a extensibilidade e o reaproveitamento do código,já que por causa de 1
+tipo só(o veiculo não motorizado),a interface não poderia guardar atributos como potência ou 
+combustível do motor.O uso de interface e/ou classe abstrata provavelmente seria mais
+adequado,com a interface dando como vantagem o encapsulamento com information hiding e seus benefícios
+para os veículos que a implementarem(maior consistência no código e de modificações nele,etc),e tendo como possível desvantagem
+o uso de várias interfaces com poucos métodos caso haja veículos muito diferentes(como no exemplo citado anteriormente).
+Levando em conta que em uma locadora de veículos normalmente os veículos tem implementações
+compartilhadas,provavelmente a opção mais adequada seria usar classes abstratas ao implementar os veículos,
+pois não seria preciso implementar todos os métodos,como na interface,e ainda assim haveria bastante
+extensibilidade e reutilização do código.Assumindo o exemplo sugerido no enunciado(carros, motos, bicicletas),a ordem de que ferramenta seria melhor usar
+é,da mais pra menos:Classe abstrata,Interface e Classe Concreta.
+
+
+
