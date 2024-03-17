@@ -22,5 +22,11 @@ pois não seria preciso implementar todos os métodos,como na interface,e ainda 
 extensibilidade e reutilização do código.Assumindo o exemplo sugerido no enunciado(carros, motos, bicicletas),a ordem de que ferramenta seria melhor usar
 é,da mais pra menos:Classe abstrata,Interface e Classe Concreta.
 
+Resumindo,e considerando o cenário onde as 3 serão usadas,o mais apropriado seria:
+-Classe abstrata para definir as características básicas de todos os veículos
+-Classe concreta para cada tipo particular(carro,moto,bicicleta)
+-Interface para particularedades de cada vaículo que se repitam em conjunto(Ex:Caso haja veículos elétricos,faz sentido
+ter usar uma interface para guardar o tempo de carga e a amperagem da bateria,pois todos os elétricos têm essas características)
+
 
 
